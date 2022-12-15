@@ -1,13 +1,11 @@
 
-data = open("1.txt")
-
-data = [int(l) for l in data]
+data = [int(l) for l in open("1.txt")]
 
 result = 0
-prev = sum(data[0:3])
-for i in range(1, len(data)-3):
+for i in range(1, len(data)):
     d = sum(data[i:i+3])
-    if d > prev:
+    p = sum(data[i-1:i+2])
+    if d > p:
         result += 1
     prev = d
 print(result)
