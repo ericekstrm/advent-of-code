@@ -1,3 +1,0 @@
-The nr of arrangements for this line was 2
-The nr of arrangements for this line was 6
-The total nr of arrangements was 8
